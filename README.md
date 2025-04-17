@@ -1,6 +1,8 @@
-# 🐳 GCP to AWS ECR Image Migration Tool
+# GCP to AWS ECR Image Migration Tool
 
 Safely migrate container images from **Google Artifact Registry** to **Amazon Elastic Container Registry (ECR)** — with digest validation, dry-run mode, tag filtering, and full visibility. Built for platform migrations, DevOps teams, and engineers who want reliable and auditable image migration. This tool pulls Docker images from a GCP registry, verifies the digest, retags them optionally, and pushes them to AWS ECR — ensuring no data loss or tag mismatch.
+
+Note: Google supports hierarchical image names (e.g. folder/app/image), but AWS ECR requires flat repository names. This tool can handle that transformation by retagging appropriately to maintain image identity.
 
 ---
 
@@ -27,8 +29,6 @@ This tool was built as part of a **platform migration** from **GCP to AWS**. Wit
 - Potential for digest mismatches
 - Fear of permanent data loss once GCP was decommissioned
 - Manual effort needed for repetitive and error-prone tasks
-
-We needed something **safe**, **automated**, and **shareable across teams**. So we built it — and now we’re sharing it with the community.
 
 ---
 
