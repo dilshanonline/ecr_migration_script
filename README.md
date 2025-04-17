@@ -152,7 +152,7 @@ Pull requests, issues, and suggestions are welcome! Feel free to fork and enhanc
 ## 📜 License
 
 This script is free to use and modify for your personal or professional use.  
-Licensed under the [MIT License](LICENSE).
+Licensed under the [Apache License, Version 2.0](LICENSE).
 
 ---
 
