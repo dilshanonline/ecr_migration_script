@@ -10,7 +10,7 @@ Note: Google supports hierarchical image names (e.g. `folder/app/image`), but AW
 
 - ✅ **Dry-run mode** to preview actions without making changes
 - 🔍 **Tag prefix filtering** to migrate only what you need
-- 🏷️ **Tag prefix replacement** (e.g., convert `v1.0.0` to `prod-1.0.0`)
+- 🏷️ **Image name/Tag prefix replacement** (e.g., convert `v1.0.0` to `prod-1.0.0`)
 - 🧪 **Digest validation** to ensure image integrity
 - 🧀 **Safe cleanup** of pulled images (after digest match)
 - 📜 **Readable logs** with timestamped file output
@@ -102,8 +102,8 @@ python -m main --filter-tag-prefix v --change-tag prod-
 | Flag                 | Description                                      |
 |----------------------|--------------------------------------------------|
 | `--dry-run`          | Preview migration without pulling/pushing       |
-| `--filter-tag-prefix`| Only migrate tags starting with a prefix (e.g., `v`) |
-| `--change-tag`       | Change the tag prefix (e.g., `prod-`)           |
+| `--filter-tag-prefix`| (Optional) Only migrate tags starting with a prefix (e.g., `v`) |
+| `--change-tag`       | (Optional) Change the tag prefix (e.g., `prod-`)           |
 
 You'll be shown a list of available images and prompted to confirm how many to migrate.
 
@@ -149,9 +149,9 @@ Pull requests, issues, and suggestions are welcome! Feel free to fork and enhanc
 
 ---
 
-## 📜 License
+## 🔑 License
 
-This script is free to use and modify for your personal or professional use.  
+This script is free to use and modify for your personal or professional projects.  
 Licensed under the [Apache License, Version 2.0](LICENSE).
 
 ---
